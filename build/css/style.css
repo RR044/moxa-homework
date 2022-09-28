@@ -2155,9 +2155,11 @@ input {
   left: 130px;
   width: 354px;
   height: 56px;
+  text-indent: 20px;
   color: #161513;
   border: 2px solid #161513;
   font-size: 23px;
+  background-color: #E6E3DE;
 }
 
 .subscribe__mail-write {
@@ -2168,37 +2170,57 @@ input {
 
 ::-webkit-input-placeholder {
   color: #161513;
-  padding-left: 21px;
+  text-indent: 20px;
   font-size: 20px;
   letter-spacing: 0.18px;
+  font-family: "Bai Jamjuree";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
 }
 
 ::-moz-placeholder {
   color: #161513;
-  padding-left: 21px;
+  text-indent: 20px;
   font-size: 20px;
   letter-spacing: 0.18px;
+  font-family: "Bai Jamjuree";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
 }
 
 :-ms-input-placeholder {
   color: #161513;
-  padding-left: 21px;
+  text-indent: 20px;
   font-size: 20px;
   letter-spacing: 0.18px;
+  font-family: "Bai Jamjuree";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
 }
 
 ::-ms-input-placeholder {
   color: #161513;
-  padding-left: 21px;
+  text-indent: 20px;
   font-size: 20px;
   letter-spacing: 0.18px;
+  font-family: "Bai Jamjuree";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
 }
 
 ::placeholder {
   color: #161513;
-  padding-left: 21px;
+  text-indent: 20px;
   font-size: 20px;
   letter-spacing: 0.18px;
+  font-family: "Bai Jamjuree";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
 }
 
 .subscribe-section {
@@ -2333,8 +2355,8 @@ input {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 510px;
-  height: 200px;
+  min-width: 510px;
+  min-height: 200px;
   padding: 30px 50px 30px 30px;
 }
 .project-scroll__text {
@@ -2343,7 +2365,6 @@ input {
   font-weight: 400;
   font-size: 18px;
   line-height: 32px;
-  overflow: scroll;
 }
 
 .WebDesign {
@@ -2357,18 +2378,6 @@ input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-.articles-section::before {
-  background-image: url("data:image/svg+xml,%3Csvg width='100' height='240' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M128.6 0h-17.2v75.9L83 5.5 67 12l29.2 72.2-55-55-12.2 12L81.9 94 13.5 64 6.6 79.8 79 111.4H0v17.2h79L6.6 160.2l6.9 15.7L81.9 146 29 198.8l12.1 12.1 55-55L67.2 228l15.9 6.4 28.4-70.4v76h17.2v-75.9l28.4 70.4L173 228l-29.2-72.2 55 55 12.2-12.1-52.8-52.8 68.4 29.9 6.9-15.7-72.4-31.6h79v-17.2h-79l72.4-31.6-6.9-15.7-68.5 30L211 41.2l-12.1-12.1-55 55L172.8 12 157 5.5 128.6 76V0Z' fill='%23E94D35'/%3E%3C/svg%3E");
-  position: absolute;
-  content: "";
-  width: 240px;
-  height: 240px;
-  right: 0;
-  background-size: contain;
-  background-position: 100% 100%;
-  background-repeat: no-repeat;
-  z-index: 100;
 }
 .articles-section__button {
   background-color: #161513;
@@ -2396,22 +2405,52 @@ input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  width: 1060px;
+  width: 100%;
   grid-gap: 100px;
   margin: 95px 0;
+}
+.articles-list::before {
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='240' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M128.6 0h-17.2v75.9L83 5.5 67 12l29.2 72.2-55-55-12.2 12L81.9 94 13.5 64 6.6 79.8 79 111.4H0v17.2h79L6.6 160.2l6.9 15.7L81.9 146 29 198.8l12.1 12.1 55-55L67.2 228l15.9 6.4 28.4-70.4v76h17.2v-75.9l28.4 70.4L173 228l-29.2-72.2 55 55 12.2-12.1-52.8-52.8 68.4 29.9 6.9-15.7-72.4-31.6h79v-17.2h-79l72.4-31.6-6.9-15.7-68.5 30L211 41.2l-12.1-12.1-55 55L172.8 12 157 5.5 128.6 76V0Z' fill='%23E94D35'/%3E%3C/svg%3E");
+  position: absolute;
+  content: "";
+  width: 240px;
+  height: 240px;
+  right: -18%;
+  background-size: contain;
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
 }
 .articles-list__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 11px;
   border: solid 1px #161513;
   color: #161513;
+}
+@media (max-width: 1024px) {
+  .articles-list__item {
+    background-color: #b78b32;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media (max-width: 576px) {
+  .articles-list__item {
+    background-color: #E94D35;
+  }
 }
 
 .design-data {

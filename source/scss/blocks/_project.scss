@@ -12,8 +12,8 @@
             color: #161513;
             align-items:flex-start;
             justify-content:center;
-            width: 510px;
-            height: 200px;
+            min-width: 510px;
+            min-height: 200px;
             padding: 30px 50px 30px 30px;
         }
         &__text{
@@ -22,7 +22,6 @@
             font-weight: 400;
             font-size: 18px;
             line-height: 32px;  
-            overflow: scroll;
         }
 }
 .WebDesign{

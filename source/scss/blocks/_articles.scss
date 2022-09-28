@@ -1,17 +1,5 @@
 .articles-section {
     display: flex;
-    &::before{
-        background-image: url("data:image/svg+xml,%3Csvg width='100' height='240' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M128.6 0h-17.2v75.9L83 5.5 67 12l29.2 72.2-55-55-12.2 12L81.9 94 13.5 64 6.6 79.8 79 111.4H0v17.2h79L6.6 160.2l6.9 15.7L81.9 146 29 198.8l12.1 12.1 55-55L67.2 228l15.9 6.4 28.4-70.4v76h17.2v-75.9l28.4 70.4L173 228l-29.2-72.2 55 55 12.2-12.1-52.8-52.8 68.4 29.9 6.9-15.7-72.4-31.6h79v-17.2h-79l72.4-31.6-6.9-15.7-68.5 30L211 41.2l-12.1-12.1-55 55L172.8 12 157 5.5 128.6 76V0Z' fill='%23E94D35'/%3E%3C/svg%3E");
-        position: absolute;
-        content: '';
-        width: 240px;
-        height: 240px;
-        right: 0;
-        background-size: contain;
-        background-position: 100% 100%;
-        background-repeat: no-repeat;
-        z-index: 100;
-    }
     &__button{
             background-color: #161513;
             color: #FFFFFF;
@@ -33,15 +21,36 @@
    
 .articles-list{
             display: flex;
+            position: relative;
             flex-direction: column;
             justify-content: space-around;
-            width: 1060px;
+            width: 100%;
             grid-gap: 100px;
             margin: 95px 0;
+                &::before{
+                    background-image: url("data:image/svg+xml,%3Csvg width='100' height='240' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M128.6 0h-17.2v75.9L83 5.5 67 12l29.2 72.2-55-55-12.2 12L81.9 94 13.5 64 6.6 79.8 79 111.4H0v17.2h79L6.6 160.2l6.9 15.7L81.9 146 29 198.8l12.1 12.1 55-55L67.2 228l15.9 6.4 28.4-70.4v76h17.2v-75.9l28.4 70.4L173 228l-29.2-72.2 55 55 12.2-12.1-52.8-52.8 68.4 29.9 6.9-15.7-72.4-31.6h79v-17.2h-79l72.4-31.6-6.9-15.7-68.5 30L211 41.2l-12.1-12.1-55 55L172.8 12 157 5.5 128.6 76V0Z' fill='%23E94D35'/%3E%3C/svg%3E");
+                    position: absolute;
+                    content: '';
+                    width: 240px;
+                    height: 240px;
+                    right: -18%;
+                    background-size: contain;
+                    background-position: 100% 100%;
+                    background-repeat: no-repeat;
+                }
             &__item{
                 display: flex;
+                padding: 11px;
                 border: solid 1px #161513;
                 color: #161513;
+                @include tablet{
+                    background-color: #b78b32;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                @include mobile{
+                    background-color: #E94D35;
+                }
             }
 
 }
