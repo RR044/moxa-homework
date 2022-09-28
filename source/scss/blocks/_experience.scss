@@ -1,0 +1,97 @@
+.experience {
+    display: flex;  
+    grid-gap: 100px;
+}
+.experience-time {
+    display: flex;
+    padding-top: 120px;
+
+    &:nth-child(odd) {
+        color: #161513;
+    }
+    &__block{
+        display: flex;
+        flex-direction: column;
+        grid-gap: 11px;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        font-size: 16px;
+        width: 353px;
+        height: 156px;
+        border: 2px solid #161513;
+        color:#161513;
+        &:nth-child(even) {
+            background-color:#161513;
+            color: #fff;
+    }
+    }
+
+}
+
+.experience-director{
+    color:#161513;
+    font-size: 23px;
+    font-weight: 400;
+    height: 32px;
+    &__born{  
+    display: flex;
+    flex-direction: column;
+    grid-gap: 30px;
+    color:#161513;
+    }
+}
+.text{
+    &:nth-child(odd){
+        font-size: 16px;
+    }
+    
+}
+
+.howMany{
+    font-size: 56px;
+    align-items: center;
+    justify-content: center;
+}
+.number{
+    font-size: 16px;
+    align-items: center;
+    justify-content: center;
+}
+.p2{
+    letter-spacing: 0.64px;
+    font-size: 31px;
+    line-height: 40px;
+
+}
+.p3{
+    font-size: 18px;
+    letter-spacing: 0.50px;
+    line-height: 32px;
+}
+.table-first{
+    display: flex;
+    justify-content: space-between;
+    &__item{
+        display: flex;
+        flex-direction: column;
+        grid-gap: 9px;
+    }
+}
+
+
+.birth{
+    color: #E94D35;
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+.date{
+    color: #161513;
+    font-size: 23px;
+}
+.lead{
+    position: relative;
+    font-size: 56px;
+    top: 21px;
+    width: 351px;
+}

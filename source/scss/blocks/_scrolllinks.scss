@@ -1,0 +1,51 @@
+
+.marquee {
+    width: 1470px;
+    // display: flex;
+    position: relative;
+    right: 20px;
+    background-color: black;
+    color: #fff;
+    margin: 100px 0;
+    transform: rotate(-4.93deg);
+}
+.marquee-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    &__link{
+        font-weight: 400;
+        font-size: 18px;
+        color: #fff;
+        margin: 30px;
+        &:hover {
+            color: beige;
+        }
+
+    }
+}
+// .marquee:hover {
+//     animation-play-state: paused;
+// }
+
+
+.link-logo2{
+    margin-left: 10px;
+}
+@media (max-width: 600px){
+    html {font-size: 12px;}
+    :root {
+        --marquee-width: 500px;
+        --marquee-height: 30px;
+        --marquee-elements-displayed:3;
+    }
+}
+   
+
+
+
+
+
+
+

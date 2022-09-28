@@ -1,0 +1,41 @@
+:root {
+  --body-bg: #262626;
+
+
+  --content-width: 1440px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  --font-family: "Bai Jamjuree", sans-serif; // var(--font-family);
+  // --font-family2: "Georgia", sans-serif; // var(--font-family2);
+  // --font-family3: "Inter", sans-serif; // var(--font-family3);
+  // text color
+  --color-a: #ffffff; // var(--color-a);
+  --color-b: #000000; // var(--color-b);
+  --color-c: #F2F1EF; // var(--color-c);
+  --color-d: #161513; // var(--color-d);
+  --color-e: #969186; // var(--color-e);
+  --color-f: #4E4E4E; // var(--color-f);
+  --color-g: #515151; // var(--color-g);
+
+
+  --color-h: #242424; // var(--color-h);
+  --color-i: #3671D4; // var(--color-i);
+  --color-j: #132442; // var(--color-j);
+  --color-k: #182C4F; // var(--color-k);
+  --color-l: #FFAE35; // var(--color-l);
+  --color-m: #738396; // var(--color-m);
+
+  // --btn-border:
+  // .btn{
+  //   &--btn-border{
+  //     border:1px solid black;
+
+  //   }
+  // }; // var(--btn-border);
+
+
+  --plus-bg: #A5340F; // var(--plus-bg);
+
+  --advantage-bg: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 50%), #A5340F;
+}

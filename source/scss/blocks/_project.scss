@@ -1,0 +1,35 @@
+.project-scroll{
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 40px;
+        &__item{
+            display: flex;
+            flex-direction: column;
+            grid-gap: 28px;
+            padding-left: 34px;
+            border: 2px solid #161513;
+            color: #161513;
+            align-items:flex-start;
+            justify-content:center;
+            width: 510px;
+            height: 200px;
+            padding: 30px 50px 30px 30px;
+        }
+        &__text{
+            font-family: 'Bai Jamjuree';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 32px;  
+            overflow: scroll;
+        }
+}
+.WebDesign{
+    font-family: 'Bai Jamjuree';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 31px;
+
+
+}

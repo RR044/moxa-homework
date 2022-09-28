@@ -1,0 +1,16 @@
+.custom-scroll{
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 32px;
+    
+
+    &__item{
+        display: flex;
+        border: 1px solid #131416;
+        width: 240px;
+        height: 100px;
+        align-items: center;
+        justify-content: center;
+    }
+}

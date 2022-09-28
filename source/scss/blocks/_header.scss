@@ -1,0 +1,64 @@
+.header {
+  padding: 36px 0px 36px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+    &__btn{
+      padding: 9px 26px;
+      border: 1px solid #161513;
+      font-family: 'Bai Jamjuree';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+      color: #161513;
+      transition: all .7s;
+      &:hover{
+        background-color: #161513;
+        color: #fff;
+
+        
+      }
+
+
+    }
+  
+}
+
+
+.navigation{
+  &-list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+ 
+  }
+  &-link{
+      font-family: 'Bai Jamjuree';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+      color: #161513;
+      position: relative;
+      &::after{
+        content: '';
+        position: absolute;
+        height: 1px;
+        width: 105%;
+        background-color: #161513;
+        bottom: 0px;
+        right: 0,9%;
+
+      }
+
+    
+
+  }
+  
+}
+
+

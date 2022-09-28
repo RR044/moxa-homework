@@ -1,0 +1,44 @@
+.main-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 10px;
+  padding-top: 130px;
+
+  &__title {
+    position: relative;
+    font-family: var(--font-family);
+    font-style: normal;
+    color: var(--color-b);
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 56px;
+    text-align: center;
+    margin-top: 120px;
+    &::before{
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      content: '';
+      background-image: url(/img/sprite/Vector-4.svg);
+      background-repeat: no-repeat;
+      background-position: 100% 100%;
+      transform: translateX(-50%);
+      background-size: contain;
+      bottom: 125%;
+      left:50%;
+    }
+  }
+
+  p {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--color-b);
+  }
+}

@@ -1,0 +1,126 @@
+
+
+.index-first {
+  
+  &__buttons {
+    font-family: 'Bai Jamjuree';
+    display: flex;
+    grid-gap: 0px;
+    font-size: 16px;
+  }
+  &__button {
+    font-family: 'Bai Jamjuree';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 13px 33px 13px 33px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .4s;
+    padding: 40px 0 50px;
+
+    &--black {
+      width: 180px;
+      background-color: var(--color-b);
+      color: var(--color-a);
+    }
+
+    &--transparent {
+      width: 145px;
+      background-color: transparent;
+      color: var(--color-b);
+      border: 1px solid var(--color-b);
+    }
+  }
+  .link-logo1{
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+  }
+  button{
+    font-family: 'Bai Jamjuree';
+    width: 144px;
+    height: 50px;
+    margin-right: -1px;
+    border: 1px solid black;
+    align-items: center;
+    justify-content: center;
+    &:hover{
+      background-color: #161513;
+      color: #fff;
+      transition: .4s;
+    }
+  
+  }
+  
+  &__niceMan{
+    width: 560px;
+    height: 560px;
+    
+  }
+  &__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 35px;
+  }
+
+  &__title {
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 64px;
+    letter-spacing: 0.56px;
+    color: var(--color-b);
+      .h1{
+      font-size: 56px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    grid-gap: 16px;
+    font-size: 23px;
+
+    &-item {
+      font-family: var(--font-family);
+      font-style: normal;
+      font-weight: 400;
+      font-size: 23px;
+      line-height: 32px;
+      letter-spacing: 0.48px;
+      color: var(--color-b);
+      position: relative;
+    }
+
+      &:not(:first-child) {
+        &:before {
+          width: 20px;
+          height: 20px;
+          content: '';
+          background-image: url(../img/sprite/icon2.svg);
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-size: contain;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          left: -36px;
+        }
+      }
+    }
+  }  
+
+
+
+  
+

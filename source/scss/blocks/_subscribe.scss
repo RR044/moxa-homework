@@ -1,0 +1,70 @@
+.subscribe-section{
+    background-color:  #E6E3DE;
+}
+.subscribe{
+    display: flex;
+    font-family: var(--font-family);
+    background-color: #E6E3DE;
+    font-style: normal;
+    height: 140px;
+    align-items: center;
+    justify-content: space-between;
+        &-text{
+            background-color: #E6E3DE;
+            font-family: 'Bai Jamjuree';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 23px;
+            line-height: 32px;
+            color: #161513;
+         }
+         &__button{
+            background-color: black;
+            align-items: center;
+            justify-content: center;
+            width: 140px;
+            height: 56px;
+            font-family: 'Bai Jamjuree';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 23px;
+            line-height: 32px;
+            color: #FFFFFF;
+            &:hover{
+                background-color:  orangered;
+                transition: .4s;
+            }
+}
+}
+.adressRight{
+    grid-gap: 24px;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+input{
+    left: 130px;
+    width: 354px;
+    height: 56px;
+    color: #161513;
+    border: 2px solid #161513;;
+    font-size: 23px;
+}
+.subscribe__mail-write {
+    color: #161513;
+    width: 354px;
+    height: 56px;
+}
+::placeholder{
+    color: #161513;
+    padding-left: 21px;
+    font-size: 20px;
+    letter-spacing: 0.18px;
+
+
+}
+.subscribe-section{
+    background-color: #E6E3DE;
+    margin-top: 136px;
+}
