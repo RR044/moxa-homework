@@ -2,15 +2,36 @@
     margin-top: 60px;
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-gap: 32px;
+    @include tablet{
+        display: flex;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 16px;
+        margin: 30px 10px 0;
+    }grid-gap: 32px;
+    @include mobile{
+        display: flex;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 16px;
+        margin: 30px 10px 0;
+    }
     
 
     &__item{
         display: flex;
         border: 1px solid #131416;
-        width: 240px;
-        height: 100px;
+        min-width: 240px;
+        min-height: 100px;
         align-items: center;
         justify-content: center;
-    }
+        @include mobile{
+            min-width: 140px;
+            min-height: 50px;
+        }   
+     }
+
+
+
+
 }

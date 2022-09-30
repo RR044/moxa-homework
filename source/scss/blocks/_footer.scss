@@ -5,17 +5,33 @@
   font-style: normal;
   text-align: center;
   padding-top: 25px;
+  @include tablet {
+
+  }
+  @include mobile {
+    display: flex;
+
+  }
+
 
 
   &-nav {
-    margin-left: 210px;
-    width: 1060px;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     font-family: var(--font-family);
     background-color: #161513;
     grid-gap: 56px 0px;
     padding: 74px 0 26px;
+    @include tablet{
+      padding: 15px 0 15px;
+      grid-gap: 38px 0 13px;
+    }
+    @include mobile{
+      display: grid;
+      padding: 15px 0 15px;
+      grid-gap: 15px 0 13px; 
+    }
 
     &__link {
       grid-column: span 2;
@@ -25,21 +41,11 @@
       grid-gap: 46px;
       justify-content: flex-end;
       position: relative;
+      @include mobile {
+        grid-gap: 14px;
+          
+      }
     
-
-     
-      // &::before{
-      //   position: absolute;
-      //   width: 32px;
-      //   height: 32px;
-      //   content:'';
-      //   background-size: contain;
-      //   background-position: 100% 100%;
-      //   left: 200px;
-      //   // top: 50%;
-      //   // transform: translateY(-50%);
-      //   // color: #fff;
-      // }
 
       a {
         font-family: 'Bai Jamjuree';

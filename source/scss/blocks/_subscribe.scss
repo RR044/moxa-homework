@@ -6,9 +6,15 @@
     font-family: var(--font-family);
     background-color: #E6E3DE;
     font-style: normal;
-    height: 140px;
+    min-height: 140px;
     align-items: center;
     justify-content: space-between;
+        @include mobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;  
+        min-height: 200px;  
+        }
         &-text{
             background-color: #E6E3DE;
             font-family: 'Bai Jamjuree';
@@ -22,14 +28,22 @@
             background-color: black;
             align-items: center;
             justify-content: center;
-            width: 140px;
-            height: 56px;
+            min-width: 140px;
+            min-height: 56px;
             font-family: 'Bai Jamjuree';
             font-style: normal;
             font-weight: 400;
             font-size: 23px;
             line-height: 32px;
             color: #FFFFFF;
+            @include tablet {
+                min-width: 260px;
+                min-height: 56px;
+            }
+            @include mobile {
+                min-width: 260px;
+                min-height: 50px;
+            }
             &:hover{
                 background-color:  orangered;
                 transition: .4s;
@@ -41,17 +55,38 @@
     width: 50%;
     display: flex;
     justify-content: flex-end;
+    @include tablet{
+        display: flex;
+        align-items: center;
+        flex-direction: column;   
+        justify-content: center; 
+        grid-gap: 10px;
+    }
+    @include mobile{
+        display: flex;
+        align-items: center;
+        flex-direction: column;   
+        justify-content: center; 
+        grid-gap: 10px;
+        }
 }
 
 input{
-    left: 130px;
-    width: 354px;
-    height: 56px;
+    min-width: 354px;
+    min-height: 56px;
     text-indent: 20px;
     color: #161513;
     border: 2px solid #161513;;
     font-size: 23px;
     background-color: #E6E3DE;
+    @include tablet {
+        min-width: 260px;
+        min-height: 56px;
+    }
+    @include mobile {
+        min-width: 260px;
+        min-height: 50px;
+    }
 }
 .subscribe__mail-write {
     color: #161513;
@@ -60,7 +95,6 @@ input{
 }
 ::placeholder{
     color: #161513;
-    // padding-left: 21px;
     text-indent: 20px;
     font-size: 20px;
     letter-spacing: 0.18px;
@@ -72,4 +106,10 @@ input{
 .subscribe-section{
     background-color: #E6E3DE;
     margin-top: 136px;
+    @include tablet {
+        margin-top: 80px;
+    }
+    @include mobile {
+        margin-top: 40px;
+    }
 }

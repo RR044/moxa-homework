@@ -1,7 +1,5 @@
-
 .marquee {
     width: 1470px;
-    // display: flex;
     position: relative;
     right: 20px;
     background-color: black;
@@ -25,22 +23,20 @@
 
     }
 }
-// .marquee:hover {
-//     animation-play-state: paused;
-// }
+
 
 
 .link-logo2{
     margin-left: 10px;
 }
-@media (max-width: 600px){
-    html {font-size: 12px;}
-    :root {
-        --marquee-width: 500px;
-        --marquee-height: 30px;
-        --marquee-elements-displayed:3;
-    }
-}
+// @media (max-width: 600px){
+//     html {font-size: 12px;}
+//     :root {
+//         --marquee-width: 500px;
+//         --marquee-height: 30px;
+//         --marquee-elements-displayed:3;
+//     }
+// }
    
 
 

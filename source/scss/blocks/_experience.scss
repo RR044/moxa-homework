@@ -1,10 +1,30 @@
 .experience {
     display: flex;  
     grid-gap: 100px;
+    @include tablet {
+        display: flex;
+        flex-direction: column;
+        margin-left: 15px;
+    }
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+        margin-left: 15px;
+    }
 }
 .experience-time {
     display: flex;
     padding-top: 120px;
+    @include tablet {
+        display: flex;
+        flex-direction: column;
+        margin: 0 10px;
+    }
+    @include mobile {
+        display: flex;
+        flex-direction: column;
+        margin: 0 10px;
+    }
 
     &:nth-child(odd) {
         color: #161513;
@@ -21,6 +41,7 @@
         height: 156px;
         border: 2px solid #161513;
         color:#161513;
+
         &:nth-child(even) {
             background-color:#161513;
             color: #fff;
@@ -62,16 +83,39 @@
     letter-spacing: 0.64px;
     font-size: 31px;
     line-height: 40px;
+    @include tablet {
+        font-size: 22px;
+        line-height: 35px;
+    }
+    @include mobile {
+        font-size: 20px;
+        line-height: 30px;
+    }
 
 }
 .p3{
     font-size: 18px;
     letter-spacing: 0.50px;
     line-height: 32px;
+    @include tablet {
+        font-size: 16px;
+    }
+    @include mobile {
+        display: flex;
+        font-size: 15px;
+    }
 }
 .table-first{
     display: flex;
     justify-content: space-between;
+    @include tablet {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    @include mobile {
+        display: flex;
+        justify-content: space-evenly;
+    }
     &__item{
         display: flex;
         flex-direction: column;
@@ -88,10 +132,21 @@
 .date{
     color: #161513;
     font-size: 23px;
+    @include tablet {
+        font-size: 12px;
+    }
+    @include mobile {
+        display: flex;
+        font-size: 18px;
+    }
 }
 .lead{
-    position: relative;
     font-size: 56px;
-    top: 21px;
-    width: 351px;
+    margin-top: 20px;
+    @include tablet {
+        font-size: 34px;
+    }
+    @include mobile {
+        font-size: 30px;
+    }
 }

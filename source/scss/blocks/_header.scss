@@ -3,6 +3,18 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @include tablet{
+    display: flex;
+    justify-content: center;
+    grid-gap: 15px;
+    padding: 10px 0px 36px;
+  }
+  @include mobile{
+    display: flex;
+    flex-direction: column;
+    grid-gap: 15px;
+    padding: 10px 0px 0px;
+  }
     &__btn{
       padding: 9px 26px;
       border: 1px solid #161513;
@@ -14,16 +26,17 @@
       text-align: center;
       color: #161513;
       transition: all .7s;
+      @include tablet{
+        padding: 5px 20px;
+      }
+      @include mobile{
+        padding: 5px 10px;
+      }
       &:hover{
         background-color: #161513;
         color: #fff;
-
-        
       }
-
-
     }
-  
 }
 
 
@@ -32,7 +45,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 32px;
+  grid-gap: 32px;
+  @include tablet {
+    display: flex;
+    grid-gap: 50px;
+  }
+  @include mobile {
+    display: flex;
+    grid-gap: 40px;
+  }
  
   }
   &-link{
@@ -52,8 +73,8 @@
         background-color: #161513;
         bottom: 0px;
         right: 0,9%;
-
       }
+
 
     
 
