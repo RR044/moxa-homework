@@ -7,21 +7,23 @@
      &__item {
         display:flex;
         position: relative;
+        max-width: 100%;
         border: 2px solid #161513;
         min-height: 140px;
         justify-content: space-between;
         color:#161513;
-        overflow: hidden;
+        // overflow: hidden;
         @include tablet {
-            display:flex;
-            flex-direction: column;
-            min-height: 100px;
+            margin: 0 15px;
+            min-height: 110px;
         }
         @include mobile {
-            display:flex;
+            display: flex;
             flex-direction: column;
-            min-height: 40px;
-            min-height: 70px;
+            margin: 0 15px;
+            min-height: 80px;
+            min-width: 10%;
+            overflow: hidden;
         }
         &:before {
             font-size: 18px;
@@ -37,11 +39,8 @@
             left: 34px;
             top: 50%;
             transform: translateY(-50%);
-      
         }
-
     }
-
 }
 
 .item-left{

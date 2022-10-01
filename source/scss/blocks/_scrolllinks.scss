@@ -6,6 +6,9 @@
     color: #fff;
     margin: 100px 0;
     transform: rotate(-4.93deg);
+    @include tablet { 
+        margin: 40px 0 120px 0;
+    }
 }
 .marquee-content {
     display: flex;
